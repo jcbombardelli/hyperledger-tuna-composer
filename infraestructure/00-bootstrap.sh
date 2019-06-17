@@ -1,3 +1,14 @@
+sudo apt update
+sudo apt install build-essential -y
+
+# Em caso de problemas com permissionamento de leitura e escrita
+# dentro do NPM, descomente as quatro linhas abaixo
+
+# mkdir ~/.npm-global
+# npm config set prefix '~/.npm-global'
+# export PATH=~/.npm-global/bin:$PATH
+# source ~/.profile
+
 npm install -g composer-cli@0.20
 npm install -g composer-rest-server@0.20
 npm install -g generator-hyperledger-composer@0.20
